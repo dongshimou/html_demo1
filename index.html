@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./js/less.min.js"></script>
+  <link rel="stylesheet/less" type="text/css" href="./css/nav.less" />
+  <link rel="stylesheet/less" type="text/css" href="./css/grid.less" />
+  <link href="./css/main.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".jump-nav" data-offset="20">
+  <div class="container jump-nav">
+    <ul class="nav jump-group">
+      <li class="">
+        <a data-toggle="tooltip" data-container="body" data-placement="right" href="#top" title="" data-original-title="返回顶部">
+          <button class="btn btn-jump">
+            <span class="glyphicon glyphicon-user"></span>
+          </button>
+        </a>
+      </li>
+      <li class="">
+        <a data-toggle="tooltip" data-container="body" data-placement="right" href="#section_log" title="" data-original-title="变更日志">
+          <button class="btn btn-jump">
+            <span class="glyphicon glyphicon-tags"></span>
+          </button>
+        </a>
+      </li>
+      <li class="active">
+        <a data-toggle="tooltip" data-container="body" data-placement="right" href="#section_feature" title="" data-original-title="特性介绍">
+          <button class="btn btn-jump">
+            <span class="glyphicon glyphicon-picture"></span>
+          </button>
+        </a>
+      </li>
+      <li class="">
+        <a data-toggle="tooltip" data-container="body" data-placement="right" href="#section_develop" title="" data-original-title="开发平台">
+          <button class="btn btn-jump">
+            <span class="glyphicon glyphicon-wrench"></span>
+          </button>
+        </a>
+      </li>
+      <li class="">
+        <a data-toggle="tooltip" data-container="body" data-placement="right" href="#section_download" title="" data-original-title="资源下载">
+          <button class="btn btn-jump">
+            <span class="glyphicon glyphicon-download-alt"></span>
+          </button>
+        </a>
+      </li>
+      <li class="">
+        <a data-toggle="tooltip" data-container="body" data-placement="right" href="#section_faq" title="" data-original-title="常见问题">
+          <button class="btn btn-jump">
+            <span class="glyphicon glyphicon-list-alt"></span>
+          </button>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="container container-main">
+    <nav class="navbar nav-aligned">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-1 nav-icon nav-icon-left">
+            <a href="http://sao.gpbeta.com/#">
+              <span class="glyphicon glyphicon-home"></span>
+            </a>
+          </div>
+          <div class="col-xs-10 nav-header">
+            <p class="nav-header-text">fffffff</p>
+          </div>
+          <div class="col-xs-1 nav-icon nav-icon-right">
+            world
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid container-content">
+      <h1 id="top">top </h1>
+      <h1 id="section_log">section_log</h1>
+      <h1 id="section_feature">section_feature</h1>
+      <h1 id="section_develop">section_develop</h1>
+      <h1 id="section_download">section_download</h1>
+      <h1 id="section_faq">section_faq</h1>
+    </div>
+  </div>
+  </div>
+</body>
+<script>
+  $(document).ready(function () {
+    $("[data-toggle='tooltip']").tooltip();
+  });
+</script>
+<style>
+  h1 {
+    height: 500px;
+  }
+</style>
+
+</html>
